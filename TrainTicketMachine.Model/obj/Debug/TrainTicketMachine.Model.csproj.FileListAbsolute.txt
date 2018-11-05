@@ -1,0 +1,6 @@
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Model\bin\Debug\TrainTicketMachine.Model.dll
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Model\bin\Debug\TrainTicketMachine.Model.pdb
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Model\obj\Debug\TrainTicketMachine.Model.csprojResolveAssemblyReference.cache
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Model\obj\Debug\TrainTicketMachine.Model.csproj.CoreCompileInputs.cache
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Model\obj\Debug\TrainTicketMachine.Model.dll
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Model\obj\Debug\TrainTicketMachine.Model.pdb
