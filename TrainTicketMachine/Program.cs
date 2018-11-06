@@ -13,7 +13,8 @@ namespace TrainTicketMachine
     {
         static void Main(string[] args)
         {
-            var a = new StationRepository().GetResponse("DART");
+            var result = new StationRepository().Find("Hodge ");
+            var result2 = new StationRepository().Find("Hodge");
         }
     }
 }

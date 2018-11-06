@@ -13,6 +13,6 @@ namespace TrainTicketMachine.Service.Repositories.StationModelRepository
         /// </summary>
         /// <param name="param">Searched Name</param>
         /// <returns>Result of search</returns>
-        StationResponse GetResponse(string param);
+        StationResponse Find(string param);
     }
 }

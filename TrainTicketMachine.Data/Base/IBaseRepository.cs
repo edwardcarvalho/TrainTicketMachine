@@ -10,6 +10,6 @@ namespace TrainTicketMachine.Service.Repository
     /// <typeparam name="T"></typeparam>
     public interface IBaseRepository<T>
     {
-        ICollection<T> Get(string param);
+        ICollection<string> GetAll(string param);
     }
 }

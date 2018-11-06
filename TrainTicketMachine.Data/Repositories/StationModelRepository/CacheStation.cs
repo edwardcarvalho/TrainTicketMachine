@@ -23,9 +23,9 @@ namespace TrainTicketMachine.Data.Repositories.StationModelRepository
         /// Return the station object
         /// </summary>
         /// <returns>If exists return a collection of stations</returns>
-        internal static ICollection<Station> Get()
+        internal static Dictionary<string, ICollection<string>> Get()
         {
-            ICollection<Station> stations = cache.Get(cacheKey) as ICollection<Station>;
+            Dictionary<string, ICollection<string>> stations = cache.Get(cacheKey) as Dictionary<string, ICollection<string>>;
 
             if (stations == null)
             {

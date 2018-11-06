@@ -14,7 +14,7 @@ namespace TrainTicketMachine.Model.Entity.Response
         /// <summary>
         /// Station Collection Property.
         /// </summary>
-        public ICollection<Station> Stations { get; set; }
+        public ICollection<string> Stations { get; set; }
 
         /// <summary>
         /// NextCharacters Collection Property.
