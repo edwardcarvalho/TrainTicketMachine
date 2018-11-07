@@ -14,12 +14,12 @@ namespace TrainTicketMachine.Model.Entity.Response
         /// <summary>
         /// Station Collection Property.
         /// </summary>
-        public ICollection<string> Stations { get; set; }
+        public List<string> Stations { get; set; }
 
         /// <summary>
         /// NextCharacters Collection Property.
         /// </summary>
-        public ICollection<string> NextCharacters { get; set; }
+        public List<string> NextCharacters { get; set; }
 
         /// <summary>
         /// Message Property.

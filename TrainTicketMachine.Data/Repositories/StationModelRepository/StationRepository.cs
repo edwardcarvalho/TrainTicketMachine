@@ -69,7 +69,7 @@ namespace TrainTicketMachine.Service.Repositories.StationModelRepository
                     HashSet<string> nextCharacters;
                     stations.TryGetValue("nextCharacters", out nextCharacters);
 
-                    return new StationResponse { Stations = words, NextCharacters = nextCharacters };
+                    return new StationResponse { Stations = words.ToList(), NextCharacters = nextCharacters.ToList() };
                 }
                 else
                 {

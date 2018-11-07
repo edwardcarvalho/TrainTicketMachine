@@ -21,18 +21,18 @@ namespace TrainTicketMachine.Api.Controllers
         }
 
         // GET api/Ticket/GetStation?term=param
-        public HttpResponseMessage GetStation([FromUri] string term)
+        public IHttpActionResult GetStation([FromUri] string term)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
                     var searchReturn = _stationRepository.Find(term);
-                    return Request.CreateResponse(HttpStatusCode.OK, searchReturn);
+                    return Ok(searchReturn);
                 }
                 else
                 {
-                    return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+                    return NotFound();
                 }
             }
             catch (Exception ex)
