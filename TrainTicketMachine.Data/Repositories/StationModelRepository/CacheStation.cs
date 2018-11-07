@@ -37,7 +37,8 @@ namespace TrainTicketMachine.Data.Repositories.StationModelRepository
                 lock (cacheKey)
                 {
                     stations = _dbContext.GetStations();
-                    cache.Set(cacheKey, stations, new CacheItemPolicy { AbsoluteExpiration = DateTime.Now.AddHours(cachePolicy) });
+                    if (stations != null)
+                        cache.Set(cacheKey, stations, new CacheItemPolicy { AbsoluteExpiration = DateTime.Now.AddHours(cachePolicy) });
                 }
             }
 

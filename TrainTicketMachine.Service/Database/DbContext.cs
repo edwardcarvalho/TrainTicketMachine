@@ -27,17 +27,16 @@ namespace TrainTicketMachine.Service.Database
         //}
 
         /// <summary>
-        /// Station List Property.
+        /// Station Dictionary Property.
         /// </summary>
-        //public Dictionary<string, ICollection<string>> Stations = new Dictionary<string, ICollection<string>>();
-        Dictionary<string, Dictionary<string, HashSet<string>>> Stations = new Dictionary<string, Dictionary<string, HashSet<string>>>();
+        private Dictionary<string, Dictionary<string, HashSet<string>>> Stations = new Dictionary<string, Dictionary<string, HashSet<string>>>(StringComparer.OrdinalIgnoreCase);
 
         /// <summary>
         /// Method to simulate database result search (mock)
         /// </summary>
         public void Init()
         {
-            List<Station> stations = new List<Station> {
+            List<Station> stationsList = new List<Station> {
                 new Station {StationId = 1,Name = "DARTFORD" },
                 new Station {StationId = 2,Name = "DARTMOUTH" },
                 new Station {StationId = 3,Name = "TOWER HILL" },
@@ -50,8 +49,23 @@ namespace TrainTicketMachine.Service.Database
                 new Station {StationId = 10,Name = "VICTORIA" }
             };
 
-            if (stations != null)
-                foreach (var s in stations.OrderBy(c => c.Name))
+            BuildStationsDictionary(stationsList);
+        }
+
+        /// <summary>
+        /// Method to get stations dictionary
+        /// </summary>
+        /// <returns>Return stations dictionary, else return null</returns>
+        public Dictionary<string, Dictionary<string, HashSet<string>>> GetStations()
+        {
+            Init();
+            return Stations.Count > 0 ? Stations : null;
+        }
+
+        public void BuildStationsDictionary(List<Station> stationsList)
+        {
+            if (stationsList != null && stationsList.Count > 0)
+                foreach (var s in stationsList.OrderBy(c => c.Name))
                 {
                     try
                     {
@@ -94,12 +108,6 @@ namespace TrainTicketMachine.Service.Database
                     }
 
                 }
-        }
-
-        public Dictionary<string, Dictionary<string, HashSet<string>>> GetStations()
-        {
-            Init();
-            return Stations;
         }
     }
 }

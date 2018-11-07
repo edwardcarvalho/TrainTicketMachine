@@ -23,16 +23,23 @@ namespace TrainTicketMachine.Service.Repositories.StationModelRepository
         /// </summary>
         /// <param name="param">search parameter</param>
         /// <returns>If exists return list of stations, else return null</returns>
-        public Dictionary<string, HashSet<string>> GetAll(string param)
+        public Dictionary<string, HashSet<string>> GetAllStationsByParam(string param)
         {
             try
             {
                 Dictionary<string, Dictionary<string, HashSet<string>>> stations = _cacheStation.Get();
 
-                Dictionary<string, HashSet<string>> list;
-                stations.TryGetValue(param, out list);
+                if (stations != null)
+                {
+                    Dictionary<string, HashSet<string>> list;
+                    stations.TryGetValue(param, out list);
 
-                return list;
+                    return list;
+                }
+                else
+                {
+                    return null;
+                }
 
             }
             catch (Exception ex)
@@ -52,20 +59,27 @@ namespace TrainTicketMachine.Service.Repositories.StationModelRepository
         {
             try
             {
-                var stations = GetAll(param);
+                var stations = GetAllStationsByParam(param);
 
-                HashSet<string> words;
-                stations.TryGetValue("stations", out words);
+                if (stations != null)
+                {
+                    HashSet<string> words;
+                    stations.TryGetValue("stations", out words);
 
-                HashSet<string> nextCharacters;
-                stations.TryGetValue("nextCharacters", out nextCharacters);
+                    HashSet<string> nextCharacters;
+                    stations.TryGetValue("nextCharacters", out nextCharacters);
 
-                return new StationResponse { Stations = words, NextCharacters = nextCharacters };
+                    return new StationResponse { Stations = words, NextCharacters = nextCharacters };
+                }
+                else
+                {
+                    return new StationResponse { Message = "Station Not Found."};
+                }
             }
             catch (Exception ex)
             {
                 //TODO: Log Event
-                return null;
+                return new StationResponse { Message = "Server Error." };
             }
         }
 

@@ -22,7 +22,7 @@ namespace TrainTicketMachine.Service.Repositories.StationModelRepository
         /// </summary>
         /// <param name="param">Searched Name</param>
         /// <returns>Result of search</returns>
-        Dictionary<string, HashSet<string>> GetAll(string param);
+        Dictionary<string, HashSet<string>> GetAllStationsByParam(string param);
 
         /// <summary>
         /// Return the possible characters list of search result

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -22,6 +23,9 @@ namespace TrainTicketMachine.Api
                               StringComparison.InvariantCultureIgnoreCase,
                               true,
                               "application/json"));
+
+            config.Formatters.JsonFormatter.SerializerSettings =
+                 new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

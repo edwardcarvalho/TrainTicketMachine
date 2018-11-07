@@ -20,16 +20,15 @@ namespace TrainTicketMachine.Api.Controllers
             _stationRepository = stationRepository;
         }
 
-        // GET api/Station
+        // GET api/Ticket/GetStation?term=param
         public HttpResponseMessage GetStation([FromUri] string term)
         {
             try
-
             {
                 if (ModelState.IsValid)
                 {
-                    var a = _stationRepository.Find(term);
-                    return Request.CreateResponse(HttpStatusCode.OK, a);
+                    var searchReturn = _stationRepository.Find(term);
+                    return Request.CreateResponse(HttpStatusCode.OK, searchReturn);
                 }
                 else
                 {

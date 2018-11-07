@@ -20,5 +20,10 @@ namespace TrainTicketMachine.Model.Entity.Response
         /// NextCharacters Collection Property.
         /// </summary>
         public ICollection<string> NextCharacters { get; set; }
+
+        /// <summary>
+        /// Message Property.
+        /// </summary>
+        public string Message { get; set; }
     }
 }
