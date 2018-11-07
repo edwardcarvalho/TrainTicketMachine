@@ -1,34 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using TrainTicketMachine.Data.Repositories.StationModelRepository;
-using TrainTicketMachine.Model.Entity;
 using TrainTicketMachine.Model.Entity.Response;
-using TrainTicketMachine.Service.Repository;
 
 namespace TrainTicketMachine.Service.Repositories.StationModelRepository
 {
     /// <summary>
     /// Repository Class of Station
     /// </summary>
-    public class StationRepository : IBaseRepository<Station>, IStationRepository
+    public class StationRepository : IStationRepository
     {
+        private readonly ICacheStation _cacheStation;
+
+        public StationRepository(ICacheStation cacheStation)
+        {
+            _cacheStation = cacheStation;
+        }
+
         /// <summary>
         /// Return de result of search
         /// </summary>
         /// <param name="param">search parameter</param>
         /// <returns>If exists return list of stations, else return null</returns>
-        public ICollection<string> GetAll(string param)
+        public Dictionary<string, HashSet<string>> GetAll(string param)
         {
             try
             {
-                var stations = CacheStation.Get();
+                Dictionary<string, Dictionary<string, HashSet<string>>> stations = _cacheStation.Get();
 
-                ICollection<string> list;
-                stations.TryGetValue(param.Substring(0, 1), out list);
+                Dictionary<string, HashSet<string>> list;
+                stations.TryGetValue(param, out list);
 
-                return list.Where(c => c.Contains(param)).ToList();
+                return list;
 
             }
             catch (Exception ex)
@@ -49,9 +53,14 @@ namespace TrainTicketMachine.Service.Repositories.StationModelRepository
             try
             {
                 var stations = GetAll(param);
-                var charList = GetNextCharacter(stations, param);
 
-                return new StationResponse { Stations = stations, NextCharacters = charList };
+                HashSet<string> words;
+                stations.TryGetValue("stations", out words);
+
+                HashSet<string> nextCharacters;
+                stations.TryGetValue("nextCharacters", out nextCharacters);
+
+                return new StationResponse { Stations = words, NextCharacters = nextCharacters };
             }
             catch (Exception ex)
             {
@@ -66,7 +75,7 @@ namespace TrainTicketMachine.Service.Repositories.StationModelRepository
         /// <param name="stations">list of stations</param>
         /// <param name="param">search parameter</param>
         /// <returns>If exists return list of characteres, else return null</returns>
-        private ICollection<Char> GetNextCharacter(ICollection<string> stations, string param)
+        public ICollection<Char> GetNextCharacter(ICollection<string> stations, string param)
         {
 
             var characteres = new List<Char>();

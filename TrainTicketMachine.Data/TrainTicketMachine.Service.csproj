@@ -42,8 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Base\IBaseRepository.cs" />
     <Compile Include="Repositories\StationModelRepository\CacheStation.cs" />
+    <Compile Include="Repositories\StationModelRepository\ICacheStation.cs" />
     <Compile Include="Repositories\StationModelRepository\IStationRepository.cs" />
     <Compile Include="Repositories\StationModelRepository\StationRepository.cs" />
   </ItemGroup>
