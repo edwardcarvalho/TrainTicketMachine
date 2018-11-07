@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TrainTicketMachine.Model.Entity
 {
     /// <summary>
-    /// Class Station
+    /// Station Class
     /// </summary>
     public class Station
     {

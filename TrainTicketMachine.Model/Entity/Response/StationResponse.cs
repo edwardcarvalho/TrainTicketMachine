@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TrainTicketMachine.Model.Entity.Response
 {
     /// <summary>
-    /// Result of stations search
+    /// StationResponse class
     /// </summary>
     public class StationResponse
     {

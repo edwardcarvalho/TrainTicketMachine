@@ -14,16 +14,40 @@ namespace TrainTicketMachine.Data.Repositories.StationModelRepository
     /// </summary>
     public class CacheStation : ICacheStation
     {
+        /// <summary>
+        /// Lock object property.
+        /// </summary>
         private static readonly object lockObj = new object();
+
+        /// <summary>
+        /// Cache Key Property.
+        /// </summary>
         private static string cacheKey = "CacheStation";
+
+        /// <summary>
+        /// Cache Policy Property.
+        /// </summary>
         private static int cachePolicy = 1;
+
+        /// <summary>
+        /// Memory Cache Instance Property.
+        /// </summary>
         private static readonly MemoryCache cache = new MemoryCache(cacheKey);
+
+        /// <summary>
+        /// DbContext Class.
+        /// </summary>
         private readonly IDbContext _dbContext;
 
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="dbContext"></param>
         public CacheStation(IDbContext dbContext)
         {
             _dbContext = dbContext;
         }
+
         /// <summary>
         /// Return the station object
         /// </summary>

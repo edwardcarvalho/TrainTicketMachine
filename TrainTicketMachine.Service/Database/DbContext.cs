@@ -1,15 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TrainTicketMachine.Model.Entity;
-using Newtonsoft;
-using Newtonsoft.Json;
-using System.IO;
-using System.Reflection;
-using Lucene.Net.Util.Automaton;
-using Lucene.Net.Support;
+
 
 namespace TrainTicketMachine.Service.Database
 {
@@ -18,14 +11,6 @@ namespace TrainTicketMachine.Service.Database
     /// </summary>
     public class DbContext : IDbContext
     {
-        ///// <summary>
-        ///// class constructor
-        ///// </summary>
-        //public DbContext()
-        //{
-        //    Init();
-        //}
-
         /// <summary>
         /// Station Dictionary Property.
         /// </summary>
@@ -62,6 +47,9 @@ namespace TrainTicketMachine.Service.Database
             return Stations.Count > 0 ? Stations : null;
         }
 
+        /// <summary>
+        /// Method to build a dictionary 
+        /// </summary>
         public void BuildStationsDictionary(List<Station> stationsList)
         {
             if (stationsList != null && stationsList.Count > 0)

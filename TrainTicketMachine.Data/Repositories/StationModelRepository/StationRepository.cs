@@ -11,8 +11,15 @@ namespace TrainTicketMachine.Service.Repositories.StationModelRepository
     /// </summary>
     public class StationRepository : IStationRepository
     {
+        /// <summary>
+        /// CacheStation Class
+        /// </summary>
         private readonly ICacheStation _cacheStation;
 
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="cacheStation"></param>
         public StationRepository(ICacheStation cacheStation)
         {
             _cacheStation = cacheStation;
