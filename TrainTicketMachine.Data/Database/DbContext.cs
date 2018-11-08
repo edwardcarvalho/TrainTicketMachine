@@ -92,7 +92,7 @@ namespace TrainTicketMachine.Data.Database
                     }
                     catch (Exception ex)
                     {
-                        throw;
+                        throw new Exception("Server Error: " + ex.ToString());
                     }
 
                 }

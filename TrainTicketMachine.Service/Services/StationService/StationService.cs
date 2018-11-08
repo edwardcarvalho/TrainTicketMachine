@@ -34,7 +34,22 @@ namespace TrainTicketMachine.Service.Services.StationService
         /// <returns>Result of search</returns>
         public StationResponse FindTerm(string term)
         {
-            return _stationRepository.Find(term);
+            var stations =  _stationRepository.GetAllStationsByParam(term);
+
+            if (stations != null)
+            {
+                HashSet<string> words;
+                stations.TryGetValue("stations", out words);
+
+                HashSet<string> nextCharacters;
+                stations.TryGetValue("nextCharacters", out nextCharacters);
+
+                return new StationResponse { Stations = words.ToList(), NextCharacters = nextCharacters.ToList() };
+            }
+            else
+            {
+                return new StationResponse { Message = "Station Not Found." };
+            }
         }
     }
 }

@@ -10,12 +10,6 @@ namespace TrainTicketMachine.Repository.Repositories.StationModelRepository
     /// <typeparam name="T"></typeparam>
     public interface IStationRepository
     {
-        /// <summary>
-        /// Return the result of station search
-        /// </summary>
-        /// <param name="param">Searched Name</param>
-        /// <returns>Result of search</returns>
-        StationResponse Find(string param);
 
         /// <summary>
         /// Return the all the stations that starts with the parameter
