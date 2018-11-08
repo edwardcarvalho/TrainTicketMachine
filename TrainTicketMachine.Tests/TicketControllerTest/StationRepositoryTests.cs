@@ -1,15 +1,11 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Rhino.Mocks;
-using TrainTicketMachine.Service.Repositories.StationModelRepository;
 using TrainTicketMachine.Api.Controllers;
-using TrainTicketMachine.Repositories.StationModelRepository;
 using TrainTicketMachine.Data.Database;
-using TrainTicketMachine.Model.Entity;
 using TrainTicketMachine.Model.Entity.Response;
 using System.Web.Http.Results;
+using TrainTicketMachine.Repository.Repositories.StationModelRepository;
+using TrainTicketMachine.Service.Services.StationService;
 
 namespace TrainTicketMachine.Tests.TicketControllerTest
 {
@@ -24,7 +20,7 @@ namespace TrainTicketMachine.Tests.TicketControllerTest
         public void SearchTestWithIncompleteTerm()
         {
             //Arrange
-            var controller = new TicketController(new StationRepository(new CacheStation(new DbContext())));
+            var controller = new TicketController(new StationService(new StationRepository(new CacheStation(new DbContext()))));
 
             var expected = new StationResponse
             {
@@ -53,7 +49,7 @@ namespace TrainTicketMachine.Tests.TicketControllerTest
         public void SearchTestWithCompleteAndIncompleteTerms()
         {
             //Arrange
-            var controller = new TicketController(new StationRepository(new CacheStation(new DbContext())));
+            var controller = new TicketController(new StationService(new StationRepository(new CacheStation(new DbContext()))));
 
             var expected = new StationResponse
             {
@@ -81,7 +77,7 @@ namespace TrainTicketMachine.Tests.TicketControllerTest
         public void SearchTestWithUnexistentTerm()
         {
             //Arrange
-            var controller = new TicketController(new StationRepository(new CacheStation(new DbContext())));
+            var controller = new TicketController(new StationService(new StationRepository(new CacheStation(new DbContext()))));
 
             var expected = new StationResponse
             {
@@ -100,7 +96,7 @@ namespace TrainTicketMachine.Tests.TicketControllerTest
         public void SearchTestWithCompleteTerm()
         {
             //Arrange
-            var controller = new TicketController(new StationRepository(new CacheStation(new DbContext())));
+            var controller = new TicketController(new StationService(new StationRepository(new CacheStation(new DbContext()))));
 
             var expected = new StationResponse
             {

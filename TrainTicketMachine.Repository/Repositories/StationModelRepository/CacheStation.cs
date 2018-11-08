@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Caching;
 using TrainTicketMachine.Data.Database;
 
-namespace TrainTicketMachine.Repositories.StationModelRepository
+namespace TrainTicketMachine.Repository.Repositories.StationModelRepository
 {
     /// <summary>
     /// Station Cache Manager

@@ -214,8 +214,12 @@
       <Project>{DAE42E53-14CD-4AC1-9CA9-FD9105DB3ECC}</Project>
       <Name>TrainTicketMachine.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TrainTicketMachine.Service\TrainTicketMachine.Service.csproj">
+    <ProjectReference Include="..\TrainTicketMachine.Repository\TrainTicketMachine.Repository.csproj">
       <Project>{8C3FE560-C188-42AA-A7B6-42F49CB133F8}</Project>
+      <Name>TrainTicketMachine.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrainTicketMachine.Service\TrainTicketMachine.Service.csproj">
+      <Project>{35791FCA-CA86-4EEA-8130-86725589CD1A}</Project>
       <Name>TrainTicketMachine.Service</Name>
     </ProjectReference>
   </ItemGroup>

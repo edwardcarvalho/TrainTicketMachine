@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TrainTicketMachine.Repositories.StationModelRepository
+namespace TrainTicketMachine.Repository.Repositories.StationModelRepository
 {
     /// <summary>
     /// Intertace for CacheStation

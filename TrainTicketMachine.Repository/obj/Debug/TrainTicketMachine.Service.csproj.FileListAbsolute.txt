@@ -10,7 +10,6 @@ c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Data\bi
 c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Data\bin\Debug\TrainTicketMachine.Service.pdb
 C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Data\bin\Debug\TrainTicketMachine.Services.dll
 C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Data\bin\Debug\TrainTicketMachine.Services.pdb
-C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Data\bin\Debug\TrainTicketMachine.Data.dll
 C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Data\bin\Debug\TrainTicketMachine.Model.dll
 C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Data\bin\Debug\TrainTicketMachine.Model.pdb
 C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Data\bin\Debug\TrainTicketMachine.Data.pdb
@@ -18,3 +17,13 @@ C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\T
 C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Data\obj\Debug\TrainTicketMachine.Service.csproj.CoreCompileInputs.cache
 C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Data\obj\Debug\TrainTicketMachine.Services.dll
 C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Data\obj\Debug\TrainTicketMachine.Services.pdb
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Service.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Service.pdb
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Data.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Model.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Model.pdb
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Data.pdb
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Service.csprojResolveAssemblyReference.cache
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Service.csproj.CoreCompileInputs.cache
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Service.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Service.pdb

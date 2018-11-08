@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
-using TrainTicketMachine.Repositories.StationModelRepository;
-using TrainTicketMachine.Model.Entity;
-using TrainTicketMachine.Service.Repositories.StationModelRepository;
+using TrainTicketMachine.Repository.Repositories.StationModelRepository;
+using TrainTicketMachine.Service.Services.StationService;
 
 namespace TrainTicketMachine.Api.Controllers
 {
@@ -18,15 +13,15 @@ namespace TrainTicketMachine.Api.Controllers
         /// <summary>
         /// StationRepository Class
         /// </summary>
-        private readonly IStationRepository _stationRepository;
+        private readonly IStationService _stationService;
 
         /// <summary>
         /// Default Constructor 
         /// </summary>
         /// <param name="stationRepository"></param>
-        public TicketController(IStationRepository stationRepository)
+        public TicketController(IStationService stationService)
         {
-            _stationRepository = stationRepository;
+            _stationService = stationService;
         }
 
         /// <summary>
@@ -41,7 +36,7 @@ namespace TrainTicketMachine.Api.Controllers
             {
                 if (ModelState.IsValid && !String.IsNullOrEmpty(term))
                 {
-                    var searchReturn = _stationRepository.Find(term);
+                    var searchReturn = _stationService.FindTerm(term);
                     return Ok(searchReturn);
                 }
                 else

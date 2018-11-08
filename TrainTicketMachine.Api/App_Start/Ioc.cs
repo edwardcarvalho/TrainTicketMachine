@@ -1,7 +1,7 @@
 ﻿using System;
 using TrainTicketMachine.Data.Database;
-using TrainTicketMachine.Repositories.StationModelRepository;
-using TrainTicketMachine.Service.Repositories.StationModelRepository;
+using TrainTicketMachine.Repository.Repositories.StationModelRepository;
+using TrainTicketMachine.Service.Services.StationService;
 using Unity;
 
 namespace TrainTicketMachine.Api.App_Start
@@ -14,6 +14,7 @@ namespace TrainTicketMachine.Api.App_Start
 
             try
             {
+                container.RegisterType<IStationService, StationService>();
                 container.RegisterType<IStationRepository, StationRepository>();
                 container.RegisterType<ICacheStation, CacheStation>();
                 container.RegisterType<IDbContext, DbContext>();
