@@ -206,17 +206,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TrainTicketMachine.Data\TrainTicketMachine.Service.csproj">
-      <Project>{8C3FE560-C188-42AA-A7B6-42F49CB133F8}</Project>
-      <Name>TrainTicketMachine.Service</Name>
+    <ProjectReference Include="..\TrainTicketMachine.Data\TrainTicketMachine.Data.csproj">
+      <Project>{3AFC5328-2280-43F2-A422-0977532C8D16}</Project>
+      <Name>TrainTicketMachine.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\TrainTicketMachine.Model\TrainTicketMachine.Model.csproj">
       <Project>{DAE42E53-14CD-4AC1-9CA9-FD9105DB3ECC}</Project>
       <Name>TrainTicketMachine.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TrainTicketMachine.Service\TrainTicketMachine.Data.csproj">
-      <Project>{3AFC5328-2280-43F2-A422-0977532C8D16}</Project>
-      <Name>TrainTicketMachine.Data</Name>
+    <ProjectReference Include="..\TrainTicketMachine.Service\TrainTicketMachine.Service.csproj">
+      <Project>{8C3FE560-C188-42AA-A7B6-42F49CB133F8}</Project>
+      <Name>TrainTicketMachine.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

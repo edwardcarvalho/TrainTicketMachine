@@ -1,0 +1,21 @@
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Service.dll
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Service.pdb
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Model.dll
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Model.pdb
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Data.csprojResolveAssemblyReference.cache
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Data.csproj.CoreCompileInputs.cache
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Service.dll
+c:\users\edward.silva\source\repos\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Service.pdb
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Data.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Data.pdb
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\Newtonsoft.Json.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\System.Collections.Immutable.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Model.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\TrainTicketMachine.Model.pdb
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\Newtonsoft.Json.xml
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\bin\Debug\System.Collections.Immutable.xml
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Data.csprojResolveAssemblyReference.cache
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Data.csproj.CoreCompileInputs.cache
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Data.dll
+C:\Users\edward.silva\Documents\Visual Studio 2017\Projects\TrainTicketMachine\TrainTicketMachine.Service\obj\Debug\TrainTicketMachine.Data.pdb

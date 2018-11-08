@@ -4,7 +4,7 @@ using System.Linq;
 using TrainTicketMachine.Model.Entity;
 
 
-namespace TrainTicketMachine.Service.Database
+namespace TrainTicketMachine.Data.Database
 {
     /// <summary>
     /// Simulates the database context
@@ -22,16 +22,16 @@ namespace TrainTicketMachine.Service.Database
         public void Init()
         {
             List<Station> stationsList = new List<Station> {
-                new Station {StationId = 1,Name = "DARTFORD" },
-                new Station {StationId = 2,Name = "DARTMOUTH" },
-                new Station {StationId = 3,Name = "TOWER HILL" },
-                new Station {StationId = 4,Name = "DERBY" },
-                new Station {StationId = 5,Name = "LIVERPOOL" },
-                new Station {StationId = 6,Name = "LIVERPOOL LIME STREET" },
-                new Station {StationId = 7,Name = "PADDINGTON" },
-                new Station {StationId = 8,Name = "EUSTON" },
-                new Station {StationId = 9,Name = "LONDON BRIDGE" },
-                new Station {StationId = 10,Name = "VICTORIA" }
+                new Station {Id = 1,Name = "DARTFORD" },
+                new Station {Id = 2,Name = "DARTMOUTH" },
+                new Station {Id = 3,Name = "TOWER HILL" },
+                new Station {Id = 4,Name = "DERBY" },
+                new Station {Id = 5,Name = "LIVERPOOL" },
+                new Station {Id = 6,Name = "LIVERPOOL LIME STREET" },
+                new Station {Id = 7,Name = "PADDINGTON" },
+                new Station {Id = 8,Name = "EUSTON" },
+                new Station {Id = 9,Name = "LONDON BRIDGE" },
+                new Station {Id = 10,Name = "VICTORIA" }
             };
 
             BuildStationsDictionary(stationsList);

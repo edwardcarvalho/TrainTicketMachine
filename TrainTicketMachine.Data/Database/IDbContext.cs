@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using TrainTicketMachine.Model.Entity;
 
-namespace TrainTicketMachine.Service.Database
+namespace TrainTicketMachine.Data.Database
 {
     /// <summary>
     /// Interface for DbContext

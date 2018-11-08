@@ -14,7 +14,7 @@ namespace TrainTicketMachine.Model.Entity
         /// <summary>
         /// Station Id property.
         /// </summary>
-        public int StationId { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Station Name property.

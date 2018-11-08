@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TrainTicketMachine.Data.Repositories.StationModelRepository;
 using TrainTicketMachine.Model.Entity.Response;
+using TrainTicketMachine.Repositories.StationModelRepository;
 
 namespace TrainTicketMachine.Service.Repositories.StationModelRepository
 {

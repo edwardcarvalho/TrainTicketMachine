@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using TrainTicketMachine.Data.Repositories.StationModelRepository;
+using TrainTicketMachine.Repositories.StationModelRepository;
 using TrainTicketMachine.Model.Entity;
 using TrainTicketMachine.Service.Repositories.StationModelRepository;
 
@@ -39,14 +39,14 @@ namespace TrainTicketMachine.Api.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
+                if (ModelState.IsValid && !String.IsNullOrEmpty(term))
                 {
                     var searchReturn = _stationRepository.Find(term);
                     return Ok(searchReturn);
                 }
                 else
                 {
-                    return NotFound();
+                    return BadRequest();
                 }
             }
             catch (Exception ex)

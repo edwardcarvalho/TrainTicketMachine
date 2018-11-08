@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Caching;
-using System.Text;
-using System.Threading.Tasks;
-using TrainTicketMachine.Model.Entity;
-using TrainTicketMachine.Service.Database;
+using TrainTicketMachine.Data.Database;
 
-namespace TrainTicketMachine.Data.Repositories.StationModelRepository
+namespace TrainTicketMachine.Repositories.StationModelRepository
 {
     /// <summary>
     /// Station Cache Manager
